@@ -4,99 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fractal Domains</title>
+
+    <!-- Importación de la tipografía "Poppins" -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
     <style>
-header {
-    background: linear-gradient(90deg, #ff9900, #ffaa33);
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    max-height: 100px;
-    width: auto;
-    margin-right: 15px;
-}
-
-.contact-info {
-    display: flex;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2em;
-}
-
-.contact-info span {
-    margin-right: 10px;
-    font-weight: bold;
-}
-
-.contact-info a {
-    color: #111;
-    background-color: #ff9900;
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact-info a:hover {
-    background-color: #ffaa33;
-}
-
-        
-        .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.logo {
-    max-height: 100px; /* Ajusta el tamaño según sea necesario */
-    width: auto;
-}
+        /* Estilos generales */
         body {
             margin: 0;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Poppins', sans-serif; /* Uso de la tipografía "Poppins" */
             background-color: #111;
             color: #fff;
         }
 
+        /* Cabecera principal */
         header {
-            background: linear-gradient(90deg, #ff9900, #ffaa33);
-            padding: 20px;
-            text-align: center;
+            background: linear-gradient(90deg, #ff9900, #ffaa33); /* Fondo degradado */
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Distribuir elementos a los extremos */
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
+        /* Contenedor del logotipo */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            max-height: 120px; /* Tamaño más grande para el logotipo */
+            width: auto;
+            margin-right: 30px; /* Espacio adicional para centrar mejor */
+        }
+
+        /* Información de contacto en la cabecera */
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Separación entre "Contact us" y el número */
             font-family: 'Poppins', sans-serif;
+            font-size: 1.2em;
         }
 
+        .contact-info span {
+            font-weight: bold; /* Texto más destacado */
+            margin-right: 10px; /* Separación adicional para mejor alineación */
+        }
+
+        .contact-info a {
+            color: #111;
+            background-color: #ff9900;
+            padding: 5px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            background-color: #ffaa33; /* Efecto hover */
+        }
+
+        /* Sección de introducción */
         .intro {
             padding: 40px;
             text-align: center;
         }
 
         .intro h2 {
-            font-family: 'Poppins', sans-serif;
             font-size: 2em;
             margin-bottom: 20px;
         }
 
         .intro p {
-            font-family: 'Poppins', sans-serif;
             font-size: 1.2em;
             line-height: 1.6;
         }
 
+        /* Tarjetas de dominios */
         .cards {
             display: flex;
             flex-wrap: wrap;
@@ -120,18 +106,7 @@ header {
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
         }
 
-        .card h3 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
-
-        .card p {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1em;
-            line-height: 1.5;
-        }
-
+        /* Formulario de contacto */
         .contact {
             background-color: #333;
             padding: 40px;
@@ -169,6 +144,7 @@ header {
             background-color: #ffaa33;
         }
 
+        /* Pie de página */
         footer {
             background-color: #111;
             padding: 20px;
@@ -186,6 +162,7 @@ header {
             color: #ffaa33;
         }
 
+        /* Botón flotante de WhatsApp */
         .whatsapp-btn {
             position: fixed;
             bottom: 20px;
@@ -204,35 +181,33 @@ header {
         .whatsapp-btn:hover {
             transform: scale(1.1);
         }
-
     </style>
     <script>
         function goToWhatsApp() {
-            window.open('https://wa.me/yourphonenumber', '_blank');
+            window.open('https://wa.me/yourphonenumber', '_blank'); /* Cambia 'yourphonenumber' por tu número */
         }
     </script>
 </head>
 <body>
 
+   <!-- Cabecera con logotipo y contacto -->
    <header>
-    <div class="logo-container">
-        <img src="logo.png" alt="Fractal Domains Logo" class="logo">
-        
-    </div>
-    <div class="contact-info">
-        <span>Contact us:</span>
-        <a href="tel:+1234567890">+1 234 567 890</a>
-    </div>
-</header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Fractal Domains Logo" class="logo">
+        </div>
+        <div class="contact-info">
+            <span>Contact us:</span>
+            <a href="tel:+1234567890">+1 234 567 890</a>
+        </div>
+    </header>
 
-
-
+    <!-- Sección de introducción -->
     <section class="intro">
         <h2>Welcome to Fractal Domains 🌐</h2>
         <p>Explore and acquire the most premium .FB domains. Fractal Domains offers unique and exclusive opportunities for your digital brand.</p>
-    
     </section>
 
+    <!-- Tarjetas de dominios -->
     <section class="cards">
         <div class="card">
             <h3>DEV.fb</h3>
@@ -248,6 +223,7 @@ header {
         </div>
     </section>
 
+    <!-- Formulario de contacto -->
     <section class="contact">
         <h2>Contact Us</h2>
         <form>
@@ -258,6 +234,7 @@ header {
         </form>
     </section>
 
+    <!-- Pie de página -->
     <footer>
         <p>Follow us on:</p>
         <a href="https://twitter.com" target="_blank">X</a>
@@ -265,6 +242,7 @@ header {
         <a href="https://discord.com" target="_blank">Discord</a>
     </footer>
 
+    <!-- Botón flotante de WhatsApp -->
     <div class="whatsapp-btn" onclick="goToWhatsApp()">
         &#x1F4AC;
     </div>
