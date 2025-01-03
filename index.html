@@ -92,19 +92,47 @@
         }
 
         .card {
-            background-color: #222;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s, box-shadow 0.3s;
-            max-width: 300px;
-            text-align: center;
-        }
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 300px;
+    text-align: center;
+}
 
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
-        }
+       .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+        .card-logo {
+    max-height: 100px;
+    width: auto;
+    margin-bottom: 10px; /* Espacio entre la imagen y el nombre */
+}
+
+        .card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+        .card button {
+    background-color: #ff9900;
+    color: #111;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1em;
+}
+
+.card button:hover {
+    background-color: #ffaa33;
+}
 
         /* Formulario de contacto */
         .contact {
@@ -209,19 +237,28 @@
 
     <!-- Tarjetas de dominios -->
     <section class="cards">
-        <div class="card">
-            <h3>DEV.fb</h3>
-            <p>The ultimate domain for developers and tech enthusiasts, perfect for coding communities or innovative projects.</p>
-        </div>
-        <div class="card">
-            <h3>ROBOT.fb</h3>
-            <p>Ideal for robotics and AI ventures, this domain embodies automation and futuristic innovation.</p>
-        </div>
-        <div class="card">
-            <h3>DRON.fb</h3>
-            <p>A cutting-edge domain for the drone industry, capturing the essence of aerial technology and exploration.</p>
-        </div>
-    </section>
+    <!-- Tarjeta 1: DEV.fb -->
+    <div class="card">
+        <img src="dev_logo.png" alt="DEV Logo" class="card-logo">
+        <h3>DEV.fb</h3>
+        <button onclick="goToContact()">Contact Us</button>
+    </div>
+
+    <!-- Tarjeta 2: ROBOT.fb -->
+    <div class="card">
+        <img src="robot_logo.png" alt="ROBOT Logo" class="card-logo">
+        <h3>ROBOT.fb</h3>
+        <button onclick="goToContact()">Contact Us</button>
+    </div>
+
+    <!-- Tarjeta 3: DRON.fb -->
+    <div class="card">
+        <img src="dron_logo.png" alt="DRON Logo" class="card-logo">
+        <h3>DRON.fb</h3>
+        <button onclick="goToContact()">Contact Us</button>
+    </div>
+</section>
+
 
     <!-- Formulario de contacto -->
     <section class="contact">
