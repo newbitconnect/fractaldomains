@@ -84,12 +84,12 @@
 
         /* Tarjetas de dominios */
         .cards {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-            padding: 40px;
-        }
+    display: grid; /* Cambia de flex a grid */
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas de igual ancho */
+    gap: 20px; /* Espaciado entre las tarjetas */
+    justify-items: center; /* Centra las tarjetas dentro de su celda */
+    padding: 40px;
+}
 
         .card {
     background-color: #222;
@@ -97,8 +97,9 @@
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, box-shadow 0.3s;
-    max-width: 300px;
     text-align: center;
+    width: 100%; /* Asegura que se adapte al tamaño del grid */
+    max-width: 250px; /* Controla el tamaño máximo de las tarjetas */
 }
 
        .card:hover {
