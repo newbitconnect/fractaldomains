@@ -135,6 +135,25 @@
     background-color: #ffaa33;
 }
 
+        @media (max-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr); /* 3 tarjetas por fila en tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr); /* 2 tarjetas por fila en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .cards {
+        grid-template-columns: 1fr; /* 1 tarjeta por fila en pantallas muy pequeñas */
+    }
+}
+
+
         /* Formulario de contacto */
         .contact {
             background-color: #333;
